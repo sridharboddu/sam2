@@ -1,0 +1,754 @@
+body{
+    background-color: #F5F5F5;
+    
+}
+.html{
+    font-family: "regular poppins";
+}
+nav{
+        -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+}
+.m0{
+  margin:0px !important;
+}
+
+  /* LogIn Css */
+
+  .bgimg{
+    background-image: url("../components/images/sam.png");
+    height: 768px; 
+    width: 1366px; 
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+  
+    .frm{
+   /* margin-top: 44px; */
+   margin-left: 50px;
+  
+    }
+    .sin{
+      /* padding-right:350px; */
+      text-align: left;
+       /* margin-left: 20px; */
+       /* margin-top:212px !important; */
+       margin-top:168px !important;
+       margin-left: 0px; 
+      
+     }
+    .fog{
+         text-align: right;
+        margin-left:295px; 
+        color:black;
+        /* margin-right: 30px; */
+      
+    }
+     /* .fir{
+          margin-top: 44px;
+          /* margin-left:264px; */
+     /* } */
+      .ipb{
+        border:"12px";
+        /* cursor:text !important;
+         text-decoration: none !important;  */
+    
+      }
+      .ename{
+        font-size: 20px;
+        color:black;
+        /* padding-right: 350px; */
+        margin-left: 0px; 
+        margin-right:400px;
+        margin-top: 48px;
+        text-align: left;
+    }
+  
+      .pname{
+        font-size:20px ;
+        color: black;
+        /* padding-right: 350px; */
+         /* margin-left: 20px;   */
+        text-align: left;
+        margin-right:400px;
+        margin-left: 0px; 
+  }
+  #usname{
+    border:1px solid grey;
+    border-radius:35px;
+     margin-right: 26px ; 
+    height:50px;
+    width:400px;
+    /* text-align: left; */
+    padding-left: 10px;
+   
+  }
+      #psname{
+        border:1px solid grey;
+        border-radius:35px;
+        /* height:48px;
+        width:100%; */
+         margin-right: 26px ;
+         /* text-align: left; */
+        height:50px;
+        width:400px;
+        padding-left: 10px;
+      }
+      .bloc{
+        border:none;
+        
+        background-color:#ffe57f;
+        padding: 14px 28px;
+        font-size: 16px;
+        height:50px;
+        width:410px;
+        /* margin-left:30px; */
+        text-align: center;
+        border-radius: 35px;
+        margin-right: 26px ; 
+          
+      }
+ 
+
+
+
+      
+  /* End LogIn Css */
+  /* Availability Css */
+
+
+ 
+.gap{
+    margin: 85px 133px 84px 133px; 
+    background-color:#FFFFFF;
+   }
+.picture{
+/* margin-top: 85px; */
+background-image: url("../components/images/avail.svg");
+ height: 606px; 
+ /* height:699px;*/
+width: 550px;  
+/* margin-bottom:84px ; */
+ background-repeat: no-repeat;
+background-size: cover;
+}
+.brdr{
+    border:1px ;
+}
+.avail{
+    padding:55px 44px 60px 41px;
+}
+.f-m{
+/* margin-top: 140px; */
+}
+.check{
+    border-radius: 10px !important;
+    border: 1px solid black;
+}
+.svab{
+    margin-top: 55px;
+       font-size: 32px;
+       padding-left: 40px;
+}
+.work-hrs{
+    margin-top: 44px;
+    font-size: 25px;
+    padding-left: 40px;
+} 
+.from-to{
+    margin-top: 24px;
+
+padding-left: 40px !important;
+
+}
+.to-from{
+ margin-top: 24px;
+ 
+ padding-left: 10px !important;
+
+}
+.frda{
+    font-size: 20px;
+    margin-left:20px;
+}
+.tda{
+    font-size: 20px;
+    margin-left:72px;
+}
+.slttime{
+    /* padding-top: 22px; */
+    margin-top: 18px !important;
+}
+.selbox{
+width:141px;
+height:35px;
+border:2px solid #707070;
+border-radius: 2px;
+color:#827CBF;
+}
+.workdays{
+    margin-top: 44px;
+    font-size: 25px;
+    padding-left:40px;
+}
+.weeks{
+    margin-top: 20px;
+}
+
+.radio-btn{
+    pointer-events: auto !important;
+    opacity:initial !important;
+    margin-top: 8px;
+    color: #827CBF;
+    margin-left: 16px;
+
+}
+.radio-bss{
+    pointer-events: auto !important;
+    opacity:initial !important;
+    margin-top: 8px;
+    color: #B3B1B1;
+}
+.sun-label{
+    margin-left: 10px !important;
+    margin-top: 25px !important;
+    font-size:18px;
+    }
+.sun{
+    border:1px solid;
+    height:60px;
+    width:66px;
+     /* padding-left: 16px !important; */
+    color: #B3B1B1;
+
+}
+.mon{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #827CBF;
+}
+.tue{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #827CBF;
+
+}
+.wed{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #827CBF;
+
+}
+.thur{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #827CBF;
+
+}
+.fri{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #827CBF;
+
+}
+.sat{
+    border:1px solid;
+    height:60px;
+    width:66px;
+    color: #B3B1B1;
+}
+.nextb{
+    padding-bottom: 47px;
+
+}
+.nxt-btn{
+    margin-top:50px;
+ margin-left:356px;
+ width:150px;
+ height:50px;
+ background-color:#827CBF !important;
+ color:white ;
+ border-radius: 10px;
+}
+
+/* }
+        .check{
+            border:2px solid black;
+            margin :10px;
+            height: 10px;
+            width:10px
+        } */
+  /* End Availability Css */
+/* Header css */
+
+
+.menu{
+    padding-left: 15px;
+}
+
+
+.inp{
+    position:relative;
+    left:100px;
+}
+.searchicon{
+    margin-left: 42px;
+    
+}
+#search{
+    width:400px;
+    padding-left: 35px;
+}
+.namcnr{
+    margin:20px;
+}
+.topimg{
+    margin-right: 20px;
+    height:44.7px;
+    width: 44.37px;
+}
+.dispic{
+    height:60px;
+    padding-top: 10px;
+     margin-right: 60px;
+    /* margin-top: 10px; */ 
+}
+
+
+
+/* End Header css */
+
+
+ /* Meeting page css */
+.meet-card{
+    width: 700px;
+    height:650px;
+    margin-top: 59px;
+    margin-left: 329px;
+    border-radius: 15px;
+    /* box-shadow: 0px 3px 6px #00000029 !important */
+    /* background-repeat: no-repeat;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box; 
+    /* font-family:"regular poppins" !important; */
+    font-weight: 500;
+   
+  }
+  .meet-icon{
+      margin-top: 30px !important;
+      margin-left: 25px !important;
+      width:17px !important;
+      height:27px !important;
+      opacity: 1;
+      background: transparent url('../components/images/chevron-left.svg') 0% 0% no-repeat padding-box;  
+  }
+  /* .left-icon{
+      margin-top: 30px !important;
+      margin-left: 25px !important;
+      width:27px !important;
+      height:37px !important; 
+      opacity: 1;
+  }  */
+  .event-title{
+      font-size: 22px;
+      /* margin-top: 64px !important; */
+      margin-left: 55px !important;
+     
+      /* font-family:"regular poppins" !important; */
+  }
+  .meeting-time{
+      font-size: 25px;
+      /* width: 299px !important;
+      height: 43px !important; */
+      /* margin-top: 93px !important; */
+      margin-left: 60px !important;
+      color: #919191;
+      /* font-family:"regular poppins" !important; */
+  }
+  .time-row{
+      margin-left: 50px !important; 
+      margin-top:5px;
+      
+  }
+  .mins{
+      font-size: 15px;
+      color: #919191;
+      width:30px !important;
+  
+  }
+  .select-time{
+      font-size: 24px;
+      text-align: center;
+  }
+  .calendar-wdt{
+      width:600px;
+      margin-left: 64px;
+      /* padding: 40px; */
+  }
+
+      /* End Meeting css */
+
+
+    /* calendar css */
+    .rbc-btn-group {
+        display: none !important;
+    }
+    .rbc-header + .rbc-header {
+        border-left:inherit;
+    }
+    .rbc-header {
+        border-bottom: inherit !important;
+    }
+    .rbc-month-view {
+        border: inherit !important
+    }
+    .rbc-day-bg + .rbc-day-bg {
+        border-left:inherit !important;
+    }
+    .rbc-month-view {
+        border-bottom: inherit !important;
+    }
+    .rbc-month-view {
+        text-align: center !important;
+    }
+    .rbc-month-row {
+        justify-content: center !important;
+    }
+    .rbc-month-row + .rbc-month-row {
+        border-top: inherit;
+        justify-content:center !important;
+    }
+    .rbc-date-cell {
+        text-align: inherit;
+    }
+
+      /* End calendar css */
+
+
+  /* User Details */
+
+
+
+  .user-card{
+    width: 700px;
+    height:730px;
+    margin-top: 59px;
+    margin-left: 389px;
+    border-radius: 15px;
+    /* box-shadow: 0px 3px 6px #00000029 !important */
+    /* background-repeat: no-repeat;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box; 
+    /* font-family:"regular poppins" !important; */
+    font-weight: 500;
+    
+    
+  }
+  .calendar-row{
+    margin-left: 50px !important;
+     color:#827CBF;
+    /* width:29px !important;   */
+  }
+  .calendar-mins{
+    font-size: 18px;
+    width:30px !important;
+  }
+  .enter-details{
+    font-size: 24px;
+    text-align: left;
+    margin-left: 64px !important;
+  }
+  .form-field{
+      padding:0px 86px 0px 64px;
+  }
+  .user-input {
+      width:540px !important;
+    border: 1px solid #707070 !important;
+    border-radius: 5px !important;
+    margin-top: 8px !important;
+    /* border-bottom: none; */
+    box-shadow: none !important;
+    padding-left: 10px !important;
+}
+.user-input-area{
+    height:120px !important;
+    border: 1px solid #707070 !important;
+    border-radius: 5px !important;
+    margin-top: 30px !important;
+    /* border-bottom: none; */
+    box-shadow: none !important;
+    padding-left: 10px !important; 
+
+}
+.frm-label{
+    font-size: 20px !important;
+    color: black !important;
+}
+.add-btn{
+    width:130px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #827CBF;
+    color:#827CBF;
+    box-shadow: none;
+    text-transform: none !important;
+    
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.frm-label-area{
+    
+    margin-top: 15px;
+    font-size: 20px !important;
+    color: black !important;
+}
+.add-btn-meeting{
+    margin-top: 25px;
+    float:right;
+    width:203px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #827CBF !important;
+    border: 1px solid #827CBF;
+    color:white;
+    box-shadow: none;
+    text-transform: none !important;
+    
+}
+/* .btn:hover,{
+    background-color: inherit !important;
+} */
+
+
+/* End User details css */
+
+
+
+/* Pick Time Css */
+.select-time-pick{
+    font-size: 24px;
+    margin-left: 170px;
+    
+    /* text-align: center; */
+}
+.pick-card{
+    margin: 59px 258px;
+    border-radius: 5px;
+    width:1050px;
+}
+.pick-time-card{
+  
+}
+
+/* .row{
+    margin-bottom: 0px;
+} */
+/* .av-time{
+    border: 2px solid red ;
+} */
+
+.pickcard{
+    margin: 0px;
+
+}
+
+.pickcard .calendar-wdt{
+    margin: 0px !important;
+}
+.day-text{
+    text-align: left !important;
+    margin-top: 55px !important;
+    color: #827CBF !important;
+    font-size: 25px;
+
+}
+.time-btn{
+    width:200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #00000029;
+    color:#131313;
+    box-shadow: none;  
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 6px 16px !important;
+    
+}
+.hide-btn{
+    width:205px !important;
+    margin-top: 20px;
+    
+}
+.time-btn-hide{
+    width:95px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #707070;
+    border: 1px solid #00000029;
+    color:#FFFFFF;
+    box-shadow: none;  
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    box-shadow: none;
+}
+.confirm-btn-hide{
+    width:95px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #827CBF;
+    border: 1px solid #00000029;
+    color:#FFFFFF;
+    box-shadow: none;  
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px !important; 
+    box-shadow: none !important; 
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: inherit !important;
+   
+}
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
+    background-color:inherit !important;
+}
+/* .btn, .btn-large, .btn-small, .btn-flat {
+    padding:8px 16px ;
+} */
+
+
+   /* End Pick Time Css */
+   /* Home Page css */
+   .lft-space{
+       background-color: white;
+        width:50px !important;
+        height:768px;
+   }
+.home-card{
+   margin: 50px 137px 50px 73px; 
+   /* padding-left: 60px; */
+   padding: 30px 60px;
+   height:610px !important;
+   border-radius: 5px;
+}
+.pick-link{
+    /* padding: 30px 60px; */
+
+}
+.usr-nam{
+    font-size: 25px !important;
+    text-align: left;
+}
+.usr-link{
+    font-size: 17px !important;
+    text-align: left;
+    color: #827CBF;
+}
+.user-img{
+    
+}
+.td-mtg{
+    color:#616161;
+    font-size: 16px;
+    /* border-bottom: 3px solid #827CBF;  */
+    /* border-radius: 2px ; */
+}
+.hr-line{
+    /* padding:none !important; */
+    /* margin:inherit !important;
+    width:1000px; */
+}
+.ntf-card{
+    margin: 30px 0px;
+   /* padding:55px; */
+}
+.usr-ntf{
+    width:400px;
+    height:100px;
+    /* margin-left: 70px; */
+    margin:10px 55px;
+    border-radius: 10px;
+}
+.crd-cntt{
+    padding:10px;
+}
+.usr-card-lab{
+    font-size: 17px;
+    text-align: left !important;
+    font-weight: 500 !important;
+}
+.usr-card-time{
+    font-size: 15px;
+    color:#616161;
+    
+}
+/* .card-btn-ntf{
+    font-weight: 800 !important;
+} */
+.btn-ntf{
+    width:100px !important;
+    height:28px;
+    border-radius: 5px;
+}
+
+   /* End Home Page css */
+.mb0{
+    margin-bottom: 0px;  
+}
+
+     /* Responsive for Mobile */
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /* Meeting Page */
+
+    .meet-card{
+        margin-left: inherit;
+        width:inherit;
+        height:inherit;
+        margin: 10px;
+    }
+    .meet-icon{
+      
+    }
+    .event-title{
+        margin-left: inherit;
+        text-align: center;
+    }
+    .meeting-time{
+        text-align: center;
+        margin-left: inherit;
+        font-size: 18px;
+    }
+    .time-row{
+       
+        margin-left:inherit; 
+        
+    }
+    .mins{
+        
+        color: #919191;
+        width:30px !important;
+    
+    }
+
+
+    /* UserDetails */
+    .user-card{
+        margin-left: inherit;
+        margin:10px;
+        
+    }
+
+    }  
