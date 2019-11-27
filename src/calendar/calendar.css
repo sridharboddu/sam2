@@ -16,17 +16,27 @@ text-rendering: optimizeLegibility;
 -moz-osx-font-smoothing: grayscale;
 font-feature-settings: 'liga';
 }
+.left-arrow{
+    font-size: 25px;
+}
+.right-arrow{
+    font-size: 25px;
+    float: right; 
+}
+.col-center{
+    text-align: center !important;
+}
 /* GENERAL */
 * {
 box-sizing: border-box;
 }
-body {
+/* body {
 font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 font-size: 1em;
 font-weight: 300;
 line-height: 1.5;
 position: relative;
-}
+} */
 header {
 display: block;
 width: 100%;

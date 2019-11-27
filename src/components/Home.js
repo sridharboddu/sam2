@@ -1,163 +1,63 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import '../components/meeting.css';
+import {Link} from 'react-router-dom';
+
 import Header from './Header';
+import TodayMeeting from './TodayMeeting';
+import ScheduleMeeting from './ScheduleMeeting';
 export default function Home() {
+  let[show,setShow]=useState(true);
+    const todayHandler=()=>{
+      setShow(true);
+    }
+    const scheduleHandler=()=>{
+      setShow(false);
+    }
   return (
     <div>
         <Header/>
        <div class="row">
-          <div class="col s1 m0 lft-space"></div>
-          <div class="col s11">
+          <div class="col s1 m1 l1 xl1 m0 lft-space"></div>
+          <div class="col s11 m11 l11 xl11">
             <div class="card home-card">
               <div class="row pick-link">
-                <div class="col s1"> 
-                 <div class="user-img">
-                   <img src="./images/avtar.png" class="circle" alt="user avtar"/>
-                 </div>
+                <div class="col s12 m1 l1 xl1"> 
+                
+                 <img src="./images/avatar4.png" class="usr-profile" alt="avtar"/>
+                 
                 </div>
-                <div class="col s11">
+                <div class="col s12 m11 l11 xl11">
                    <div class="usr-nam">Sainik Akkasali</div>
-                   <div class="usr-link">sam.com/sainik.akkasali@purviewservices.com</div>
+                <Link to="/Meeting">
+                  <div class="usr-link">sam.com/sainik.akkasali@purviewservices.com</div>
+                  </Link>
                 </div>
               </div>
+
+
+              
               <div class="row">
-                  <div clas="col s12">
-                   <div class="col s2 "><label class="td-mtg">Today Meetings</label></div>
-                   <div class="col s10"><label class="td-mtg">Scheduled Meetings</label></div>
-                  </div>
-                  {/* <div clas="col s8 ">12313</div> */}
+                  
+                   <div class="col s6 m2 l2 xl2">
+                                 
+                       <a class=" td-mtg" onClick={todayHandler}>Today Meetings</a> 
+                  
+                   </div>
+                   <div class="col s6 m10 l10 xl10">
+                   <a class=" td-mtg " onClick={scheduleHandler}>Scheduled Meetings</a>
+                   </div>
+                  
+                
+              </div><br/>
+              <div class="home-divider">
+              <div class="divider " tabindex="-1"></div>
               </div>
-              <hr class="hr-line"></hr>
-              <div class="row">
-                <div class="col 12 ntf-card">
-                 <div class=" col s6 ">
-                   <div class="card usr-ntf">
-                     <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col s6">
-                   <div class="card usr-ntf">
-                   <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col s6">
-                   <div class="card usr-ntf">
-                   <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col s6">
-                   <div class="card usr-ntf">
-                   <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col s6">
-                   <div class="card usr-ntf">
-                   <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col s6">
-                   <div class="card usr-ntf">
-                   <div class="row crd-cntt">
-                      <div class="col s3">
-                        <img src="./images/avtar.png" class="circle" alt="avtar"/>
-                      </div>
-                      <div class="col s5">
-                        <span class="usr-card-lab">Jhon Doe</span><br/><br/>
-                        <span class="usr-card-time">
-                        <i class="material-icons ">access_time</i>11:00 AM-11:30
-                         
-                        </span>
-                      </div>
-                      <div class="col s4 card-btn-ntf ">
-                      <a class=" btn-small primary btn-ntf green accent-3">Accept</a><br/><br/>
-
-                      <a class=" btn-small danger btn-ntf red">Decline</a>
-                      </div>
-                     </div>
-                   </div>
-                 </div>                                 
-                </div>
-              </div>
+              {/* <hr class="hr-line"></hr> */}
+                   { 
+                      show ? 
+                         <TodayMeeting/>:
+                         <ScheduleMeeting/>
+                    }
             </div>
           </div>
        </div>

@@ -13,173 +13,99 @@ nav{
 .m0{
   margin:0px !important;
 }
-
+.ml{
+margin-left: 0px ;
+}
+.p0{
+    padding: 0px !important;
+}
+  /* Calendar Css*/
+  .calendar-cnt{
+      height:450px;
+  }
+  /* End Calendar Css */
   /* LogIn Css */
 
-  .bgimg{
-    background-image: url("../components/images/sam.png");
-    height: 768px; 
-    width: 1366px; 
-   background-repeat: no-repeat;
-   background-size: cover;
-  }
   
-  
-    .frm{
-   /* margin-top: 44px; */
-   margin-left: 50px;
-  
-    }
-    .sin{
-      /* padding-right:350px; */
-      text-align: left;
-       /* margin-left: 20px; */
-       /* margin-top:212px !important; */
-       margin-top:168px !important;
-       margin-left: 0px; 
-      
-     }
-    .fog{
-         text-align: right;
-        margin-left:295px; 
-        color:black;
-        /* margin-right: 30px; */
-      
-    }
-     /* .fir{
-          margin-top: 44px;
-          /* margin-left:264px; */
-     /* } */
-      .ipb{
-        border:"12px";
-        /* cursor:text !important;
-         text-decoration: none !important;  */
-    
-      }
-      .ename{
-        font-size: 20px;
-        color:black;
-        /* padding-right: 350px; */
-        margin-left: 0px; 
-        margin-right:400px;
-        margin-top: 48px;
-        text-align: left;
-    }
-  
-      .pname{
-        font-size:20px ;
-        color: black;
-        /* padding-right: 350px; */
-         /* margin-left: 20px;   */
-        text-align: left;
-        margin-right:400px;
-        margin-left: 0px; 
-  }
-  #usname{
-    border:1px solid grey;
-    border-radius:35px;
-     margin-right: 26px ; 
-    height:50px;
-    width:400px;
-    /* text-align: left; */
-    padding-left: 10px;
-   
-  }
-      #psname{
-        border:1px solid grey;
-        border-radius:35px;
-        /* height:48px;
-        width:100%; */
-         margin-right: 26px ;
-         /* text-align: left; */
-        height:50px;
-        width:400px;
-        padding-left: 10px;
-      }
-      .bloc{
-        border:none;
-        
-        background-color:#ffe57f;
-        padding: 14px 28px;
-        font-size: 16px;
-        height:50px;
-        width:410px;
-        /* margin-left:30px; */
-        text-align: center;
-        border-radius: 35px;
-        margin-right: 26px ; 
-          
-      }
- 
-
-
-
       
   /* End LogIn Css */
+
+  
   /* Availability Css */
-
-
- 
-.gap{
-    margin: 85px 133px 84px 133px; 
+  .wholee{
+    margin: 84px  223px 84px 223px !important; 
     background-color:#FFFFFF;
-   }
+    width:1100px;
+    /* margin-top: 84px;
+    margin-bottom: 84px; */
+}
 .picture{
-/* margin-top: 85px; */
-background-image: url("../components/images/avail.svg");
- height: 606px; 
- /* height:699px;*/
-width: 550px;  
-/* margin-bottom:84px ; */
+background-image: url("meet1.png");
+ height: 599px !important; 
+width: 550px !important;  
+padding:0px !important;
  background-repeat: no-repeat;
-background-size: cover;
 }
-.brdr{
-    border:1px ;
+.mater{
+    height: 599px !important; 
+width: 550px !important;  
+padding:0px !important;
 }
-.avail{
-    padding:55px 44px 60px 41px;
-}
-.f-m{
-/* margin-top: 140px; */
-}
-.check{
-    border-radius: 10px !important;
-    border: 1px solid black;
-}
-.svab{
+.setavailable{
+    font-size: 32px;
+    font-weight: 500 !important;
     margin-top: 55px;
-       font-size: 32px;
-       padding-left: 40px;
+    margin-left: 39px !important ;
 }
-.work-hrs{
-    margin-top: 44px;
-    font-size: 25px;
-    padding-left: 40px;
-} 
+.workhrs{
+    font-size:25px;
+    /* margin-top: 41px !important; */
+    margin-top: 35px !important;
+
+    margin-left: 40px !important ;
+}
+.high{
+margin-left:23px !important;
+/* margin-top: 24px !important ; */
+margin-top: 16px !important;
+
+}
 .from-to{
-    margin-top: 24px;
-
-padding-left: 40px !important;
-
+    /* margin-top: 24px !important ; */
+}
+.frm{
+    font-size: 20px !important;
 }
 .to-from{
- margin-top: 24px;
- 
- padding-left: 10px !important;
+    /* margin-top: 24px !important ; */
 
+ padding-left: 10px !important;
 }
 .frda{
     font-size: 20px;
-    margin-left:20px;
 }
 .tda{
     font-size: 20px;
-    margin-left:72px;
+    margin-left:0px !important;
+}
+.toadj{
+    /* margin-left :14px !important; */
+    margin-left:0px !important;
 }
 .slttime{
-    /* padding-top: 22px; */
+  
     margin-top: 18px !important;
+    padding: 2px !important;
+    padding-left: 12px !important;
+    font-size:20px;
+    border-color:#707070 ;
+  
+}
+.slottime{
+    margin-top: 18px !important;
+    font-size:20px !important;
+    border-color: #707070;
+    padding-left:0px !important;
 }
 .selbox{
 width:141px;
@@ -187,110 +113,149 @@ height:35px;
 border:2px solid #707070;
 border-radius: 2px;
 color:#827CBF;
+padding: 2px !important;
+padding-left: 7px !important;
+padding-top:0px !important;
 }
 .workdays{
-    margin-top: 44px;
+    /* margin-top: 30px; */
+    margin-top: 12px !important;
+
     font-size: 25px;
-    padding-left:40px;
+    /* font-weight: 500 !important; */
+    margin-left: 42px !important ;
 }
 .weeks{
-    margin-top: 20px;
+    margin-top: 20px;  
+    margin-left:50px !important;
+    /* margin-right: 10px !important; */
 }
+.gray-label{
 
-.radio-btn{
-    pointer-events: auto !important;
-    opacity:initial !important;
-    margin-top: 8px;
-    color: #827CBF;
-    margin-left: 16px;
-
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    font-size:18px;
+        color: #B3B1B1;
 }
-.radio-bss{
-    pointer-events: auto !important;
-    opacity:initial !important;
-    margin-top: 8px;
-    color: #B3B1B1;
+.check-color{
+    /* color:#B3B1B1 !important; */
 }
 .sun-label{
-    margin-left: 10px !important;
-    margin-top: 25px !important;
+     margin-left: 0px !important;
+    margin-top: 0px !important;
     font-size:18px;
+        /* color: #827CBF; */
+        color: #B3B1B1;
+    } 
+    .cont input:checked ~ .sun-label {
+        color: #827CBF !important;
     }
-.sun{
-    border:1px solid;
-    height:60px;
-    width:66px;
-     /* padding-left: 16px !important; */
-    color: #B3B1B1;
 
-}
-.mon{
+.boxbdr{
     border:1px solid;
-    height:60px;
-    width:66px;
-    color: #827CBF;
-}
-.tue{
-    border:1px solid;
-    height:60px;
-    width:66px;
-    color: #827CBF;
-
-}
-.wed{
-    border:1px solid;
-    height:60px;
-    width:66px;
-    color: #827CBF;
-
-}
-.thur{
-    border:1px solid;
-    height:60px;
-    width:66px;
-    color: #827CBF;
-
-}
-.fri{
-    border:1px solid;
-    height:60px;
-    width:66px;
-    color: #827CBF;
-
-}
-.sat{
-    border:1px solid;
-    height:60px;
-    width:66px;
-    color: #B3B1B1;
+    height:60px !important;
+    width:66px !important;
+     padding-left: 12px !important;
+   color: #B3B1B1;
+   margin-left: -1px !important;
 }
 .nextb{
     padding-bottom: 47px;
-
 }
 .nxt-btn{
-    margin-top:50px;
- margin-left:356px;
+    /* margin-top:50px; */
+    margin-top: 99px !important;
+
+ margin-left:362px !important;
  width:150px;
  height:50px;
  background-color:#827CBF !important;
  color:white ;
+ border:none;
  border-radius: 10px;
+ font-size:18px;
+}
+/* The container */
+.cont {
+  display: block;
+  position: relative;
+  padding-left: 2px !important;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* }
-        .check{
-            border:2px solid black;
-            margin :10px;
-            height: 10px;
-            width:10px
-        } */
+/* Hide the browser's default checkbox */
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 7px !important;
+  left: 12px !important;
+  height: 12px !important;
+  width: 12px !important;
+  background-color:#B3B1B1;
+  border-radius:50px;
+  padding-left: 4px !important;
+}
+
+/* On mouse-over, add a grey background color */
+/* .cont:hover input ~ .checkmark:active {
+    background-color:#827CBF !important;
+  
+} */
+
+/* When the checkbox is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+    background-color: #827CBF !important;
+}
+.cont input:checked ~ .checkmark:active {
+    /* background-color:#827CBF !important; */
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  position: absolute;
+  display: none;
+          
+
+} */
+/* Show the checkmark when checked */
+/* .cont input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+/* .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+
+
   /* End Availability Css */
 /* Header css */
 
 
 .menu{
     padding-left: 15px;
+    color:#A7A7A8;
 }
 
 
@@ -308,6 +273,7 @@ color:#827CBF;
 }
 .namcnr{
     margin:20px;
+    color:#A7A7A8;
 }
 .topimg{
     margin-right: 20px;
@@ -317,7 +283,7 @@ color:#827CBF;
 .dispic{
     height:60px;
     padding-top: 10px;
-     margin-right: 60px;
+     margin-right: 45px;
     /* margin-top: 10px; */ 
 }
 
@@ -329,9 +295,10 @@ color:#827CBF;
  /* Meeting page css */
 .meet-card{
     width: 700px;
-    height:650px;
-    margin-top: 59px;
-    margin-left: 329px;
+    margin: 60px 430px 60px 430px;
+    height:auto;
+    /* margin-top: 59px;
+    margin-left: 329px; */
     border-radius: 15px;
     /* box-shadow: 0px 3px 6px #00000029 !important */
     /* background-repeat: no-repeat;*/
@@ -372,7 +339,7 @@ color:#827CBF;
       /* font-family:"regular poppins" !important; */
   }
   .time-row{
-      margin-left: 50px !important; 
+      margin-left: 35px !important; 
       margin-top:5px;
       
   }
@@ -396,12 +363,47 @@ color:#827CBF;
 
 
     /* calendar css */
-    .rbc-btn-group {
+    span.rbc-btn-group,button:nth-child(1) {
+        /* color: aqua;   */
+        /* display: none !important; */
+       }
+    /* .rbc-btn-group {
         display: none !important;
-    }
+    } */
+    /* .date-in-past >div{
+        pointer-events: none;
+      } */
+        .date-in-past .rbc-row-content {
+        /* pointer-events: none !important;  */
+        /* opacity: 0.4 !important; */
+        /* width: 14.3%; 
+         background: #ccc;  */
+      }
+      /* .rbc-date-cell .rbc-now .rbc-current{
+          pointer-events: visible !important;
+      } */
+      /* .rbc-month-row  .rbc-row-bg  .date-in-past.rbc-date-cell {
+          pointer-events: none !important;
+      } */
+       .date-in-past {
+        pointer-events: none !important;
+        /* opacity: 0.4 !important; */
+        width: 14.3%;
+        background: #ccc;
+        /* border: 2px solid #fff;
+        border-radius: 5px; */
+        /* border-right: solid 1px #fff; */
+       }
     .rbc-header + .rbc-header {
         border-left:inherit;
     }
+/* .rbc-date-cell a{
+    cursor:not-allowed;
+} */
+.unread{
+    pointer-events: none !important;
+}
+    
     .rbc-header {
         border-bottom: inherit !important;
     }
@@ -427,17 +429,46 @@ color:#827CBF;
     .rbc-date-cell {
         text-align: inherit;
     }
+    .rbc-toolbar-label{
+        margin-right: 120px !important;
+    }
+    .rbc-toolbar button {
+        padding: 3px !important;
+        margin: 10px;
+       border: inherit !important;
+       color:#827CBF ;
+       font-weight: 500;
+       background-color: inherit !important;
+    }
+div.meet-card .calendar-cnt .rbc-calendar  span.rbc-btn-group button:first-child{
+    display: none !important;  
+    background: #ff0000 !important;
+}
+div.meet-card .calendar-cnt .rbc-calendar span.rbc-btn-group + span + span.rbc-btn-group  { 
+    display: none !important;
+}
 
-      /* End calendar css */
+    div.pickcard .calendar-wdt span.rbc-btn-group button:first-child { 
+background: #ff0000 !important;
+display: none !important;
+    }
 
 
-  /* User Details */
+    div.pickcard .calendar-wdt span.rbc-btn-group + span + span.rbc-btn-group  { 
+        background: #ff0000 !important;
+        display: none !important;
+            }
+
+      /* End calendar Css */
+
+
+  /* User Details Css */
 
 
 
   .user-card{
     width: 700px;
-    height:730px;
+    /* height:750px; */
     margin-top: 59px;
     margin-left: 389px;
     border-radius: 15px;
@@ -450,7 +481,7 @@ color:#827CBF;
     
   }
   .calendar-row{
-    margin-left: 50px !important;
+    margin-left: 35px !important;
      color:#827CBF;
     /* width:29px !important;   */
   }
@@ -470,7 +501,7 @@ color:#827CBF;
       width:540px !important;
     border: 1px solid #707070 !important;
     border-radius: 5px !important;
-    margin-top: 8px !important;
+    /* margin-top: 8px !important; */
     /* border-bottom: none; */
     box-shadow: none !important;
     padding-left: 10px !important;
@@ -479,7 +510,7 @@ color:#827CBF;
     height:120px !important;
     border: 1px solid #707070 !important;
     border-radius: 5px !important;
-    margin-top: 30px !important;
+    /* margin-top: 30px !important; */
     /* border-bottom: none; */
     box-shadow: none !important;
     padding-left: 10px !important; 
@@ -488,7 +519,10 @@ color:#827CBF;
 .frm-label{
     font-size: 20px !important;
     color: black !important;
+    position: inherit !important;
 }
+
+
 .add-btn{
     width:130px;
     height: 35px;
@@ -500,22 +534,28 @@ color:#827CBF;
     text-transform: none !important;
     
 }
-.btn:hover, .btn-large:hover, .btn-small:hover {
+
+/* .btn:hover, .btn-large:hover, .btn-small:hover {
     background-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
+} */
 .frm-label-area{
     
     margin-top: 15px;
     font-size: 20px !important;
     color: black !important;
+    position: inherit !important;
+}
+.add-schedule-btn{
+    padding-bottom: 100px !important;
 }
 .add-btn-meeting{
-    margin-top: 25px;
+    margin-top: 20px;
+    padding-top: 0px;
     float:right;
     width:203px;
-    height: 35px;
+    height: 50px;
     border-radius: 5px;
     background-color: #827CBF !important;
     border: 1px solid #827CBF;
@@ -524,9 +564,22 @@ color:#827CBF;
     text-transform: none !important;
     
 }
+a.add-btn-meeting:hover{
+    background-color: #827CBF !important; 
+}
+.btn.add-btn-meeting:hover{
+    background-color: #827CBF !important;
+}
+.btn.add-btn-meeting:focus{
+    background-color: #827CBF !important;
+}
+
 /* .btn:hover,{
     background-color: inherit !important;
 } */
+
+
+
 
 
 /* End User details css */
@@ -544,6 +597,7 @@ color:#827CBF;
     margin: 59px 258px;
     border-radius: 5px;
     width:1050px;
+    height: 650px !important;
 }
 .pick-time-card{
   
@@ -569,8 +623,16 @@ color:#827CBF;
     margin-top: 55px !important;
     color: #827CBF !important;
     font-size: 25px;
+    margin-bottom: 15px;
 
 }
+.time-slot-main{
+    overflow-y: scroll;
+    height:430px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
 .time-btn{
     width:200px;
     height: 50px;
@@ -597,11 +659,15 @@ color:#827CBF;
     background-color: #707070;
     border: 1px solid #00000029;
     color:#FFFFFF;
-    box-shadow: none;  
-    font-size: 15px;
+    box-shadow:none;  
+    font-size:15px;
     font-weight: 500;
-    padding: 8px 16px !important;
-    box-shadow: none;
+    padding: 6px 10px !important;
+    box-shadow: none ;
+    text-transform: inherit !important;
+}
+a.time-btn-hide:hover {
+    background-color: #707070 !important;
 }
 .confirm-btn-hide{
     width:95px;
@@ -613,8 +679,12 @@ color:#827CBF;
     box-shadow: none;  
     font-size: 15px;
     font-weight: 500;
-    padding: 8px 16px !important; 
+    padding: 6px 10px !important; 
     box-shadow: none !important; 
+    text-transform: inherit !important;
+}
+a.confirm-btn-hide:hover {
+    background-color: #827CBF !important;
 }
 .btn:hover, .btn-large:hover, .btn-small:hover {
     background-color: inherit !important;
@@ -629,16 +699,18 @@ color:#827CBF;
 
 
    /* End Pick Time Css */
+
+
    /* Home Page css */
    .lft-space{
        background-color: white;
         width:50px !important;
-        height:768px;
+        height:auto;
    }
 .home-card{
    margin: 50px 137px 50px 73px; 
    /* padding-left: 60px; */
-   padding: 30px 60px;
+   padding: 30px 60px 30px 60px;
    height:610px !important;
    border-radius: 5px;
 }
@@ -655,20 +727,35 @@ color:#827CBF;
     text-align: left;
     color: #827CBF;
 }
-.user-img{
+.img-content{
+    margin-top: 8px !important;
     
+}
+.home-divider{
+ 
+}
+.user-img{
+    background:  url('../components/images/avatar3.png') ;
+    width:67px;
+    height:67px; 
+    border-radius: 50%;
+    margin-top: 8px !important; 
 }
 .td-mtg{
     color:#616161;
     font-size: 16px;
-    /* border-bottom: 3px solid #827CBF;  */
-    /* border-radius: 2px ; */
+    font-weight: 500;
+    
 }
-.hr-line{
-    /* padding:none !important; */
-    /* margin:inherit !important;
-    width:1000px; */
-}
+a.td-mtg:active {
+    text-decoration: underline;
+  }
+  
+/* .td-mtg:hover{
+    border-bottom: 2px solid #827CBF;  
+     border-radius: 2px  ;
+} */
+
 .ntf-card{
     margin: 30px 0px;
    /* padding:55px; */
@@ -683,15 +770,50 @@ color:#827CBF;
 .crd-cntt{
     padding:10px;
 }
+.usr-profile{
+    width:67px;
+    height:67px;
+    border-radius:50%;
+}
 .usr-card-lab{
     font-size: 17px;
     text-align: left !important;
     font-weight: 500 !important;
+    padding: 10px 4px 3px 14px !important;
+
 }
 .usr-card-time{
     font-size: 15px;
     color:#616161;
-    
+    padding: 0px 8px 18px 12px !important;
+    font-weight: 500 !important;
+}
+.usr-card-time i{
+    padding-right: 5px;
+  padding-top:13px;
+  
+}
+.acs-time{
+    font-size:16px;
+    margin-top:5px;
+   
+}
+.home-time-slot{
+    width: 133px !important;
+    padding-left: 6px !important;
+}
+.acs-hrs{
+
+}
+/* .avtr-img{
+    background:  url('../components/images/avatar4.png') ;
+    width:67px;
+    height:67px; 
+    border-radius: 50%; 
+
+} */
+.usr-time{
+    margin-top:5px;
 }
 /* .card-btn-ntf{
     font-weight: 800 !important;
@@ -700,55 +822,271 @@ color:#827CBF;
     width:100px !important;
     height:28px;
     border-radius: 5px;
+    margin-top: 6px !important;
+    margin-bottom: 8px;
 }
-
+.hide-btn-home{
+    margin-top: 20px;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    /* background-color: inherit !important; */
+    /* color:black; */
+} 
    /* End Home Page css */
+
+   .usr-shd{
+       padding-left: 25px !important;
+   }
+   .usr-card-shd{
+    font-size: 15px;
+    color:#616161;
+    padding: 0px 0px 2px 0px !important;
+    font-weight: 500 !important;
+}
+.usr-card-lab-shd{
+    font-size: 17px;
+    text-align: left !important;
+    font-weight: 500 !important;
+  
+
+}
+.usr-card-time-shd i{
+    padding-right: 5px;
+  /* padding-top:10px; */
+  
+}
+.acs-time-shd{
+    font-size:16px;
+    margin-top:5px;
+    padding-right: 5px !important;
+   
+}
+.time-icon-lab{
+    margin-bottom: 10px;
+}
+    /* Schedule Meeting Css */
+      
+
+    /* End Schedule Meeting Css */
+
 .mb0{
     margin-bottom: 0px;  
 }
 
-     /* Responsive for Mobile */
 
-  @media only screen and (max-width: 768px) {
+a.green.accent-3:hover {
+    background-color: #00F196 !important;
+}
+a.red:hover {
+    background-color: red !important;
+}
+
+
+
+
+
+
+
+
+
+/* Login Css */
+
+
+.backimg{
+    background-image: url("../components/sammin.png");
+     height: auto !important; 
+    width: 100% !important;  
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+  }
+  .googlee{
+   margin-top: 670px;
+   margin-bottom: 40px;
+   text-align: center !important;
+  }
+  .signwith{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .butngoogle{
+    height:60px !important;
+    width: 334px !important;
+    background-color: #FFFFFF;
+    color:black;
+    border-radius:10px;
+    text-transform: inherit !important;
+    font-size: 22px;
+    font-weight: 500;
+    border:none
+  }
+  .btn:hover, .btn-large:hover, .btn-small:hover{
+      background-color: white !important;
+  }
+  .btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
+    background-color:white !important;
+  }
+  .googicon{
+    margin-left:10px;
+  
+  }
+
+/* End Login Css */
+     /* Responsive for Mobile */
+     @media only screen and (max-width: 600px) {
+         /* SignIn Css Responsive */
+         .backimg{
+            
+             
+         }
+
+         /* SignIn Css Responsive */
+
+        /* Set Availabilty Css Responsive */
+        .wholee{
+        
+        margin: inherit;
+        }
+        /* Set Availabilty Css Responsive */
+        .meet-card{
+            margin-left: inherit;
+            width:inherit;
+            height:inherit;
+            margin: 10px;
+        }
+        .meet-icon{
+          
+        }
+        .event-title{
+            margin-left: inherit;
+            text-align: center;
+        }
+        .meeting-time{
+            text-align: center;
+            margin-left: inherit;
+            font-size: 18px;
+        }
+        .time-row{
+           
+            margin-left:inherit; 
+            
+        }
+        .mins{
+            
+            /* color: #919191; */
+            /* width:30px !important; */
+            margin: inherit !important;
+        
+        }
+        .calendar-cnt {
+            height: 440px;
+        }
+        .rbc-toolbar-label{
+            text-align: center;
+        }
+        /* PickTime Css Responsive */
+        .pick-card{
+            margin: 10px;
+            margin-left: inherit;
+           
+        }
+        
+
+        /* PickTime Css Responsive */
+
+
+        /* User Details Responsive */
+          .user-card{
+              margin-left: inherit;
+              margin: 10px;
+          }
+          /* User Details Responsive */
+          /* Home Css Responsive */
+          .home-card {
+            margin: inherit;
+           
+            padding: inherit;
+            height:auto !important;
+            border-radius: 5px;
+        } 
+        .usr-ntf{
+            margin: inherit;
+            width: 250px;
+        }    
+
+
+          /* Home Css Responsive */
+
+
+
+
+     }
+     @media only screen and (min-width: 600px) {
+          /* Set Availabilty Css Responsive */
+        .wholee{
+           
+            margin:inherit;
+            }
+            /* Set Availabilty Css Responsive */
+
+         /* Meeting Css Responsive */
+     
+         /* Meeting Css Responsive */
+         /* PickTime Css Responsive */
+        .pick-card{
+            /* margin: 100px; */
+            /* margin-left: inherit; */
+            
+           
+        }
+        
+
+        /* PickTime Css Responsive */
+
+     }
+     @media only screen and (min-width: 768px) {
     /* For mobile phones: */
     /* Meeting Page */
 
-    .meet-card{
-        margin-left: inherit;
-        width:inherit;
-        height:inherit;
-        margin: 10px;
-    }
-    .meet-icon{
-      
-    }
-    .event-title{
-        margin-left: inherit;
-        text-align: center;
-    }
-    .meeting-time{
-        text-align: center;
-        margin-left: inherit;
-        font-size: 18px;
-    }
-    .time-row{
-       
-        margin-left:inherit; 
-        
-    }
-    .mins{
-        
-        color: #919191;
-        width:30px !important;
     
+
+     /* PickTime Css Responsive */
+     .pick-card{
+        /* margin:10px; */
+        /* margin-left: inherit; */
+       
     }
+    
 
-
+    /* PickTime Css Responsive */
     /* UserDetails */
-    .user-card{
-        margin-left: inherit;
-        margin:10px;
-        
-    }
-
+       
+     /* User Details Responsive */
+     .user-card{
+        margin-left:inherit;
+        margin: 10px;
+   }
+   /* User Details Responsive */
+     /* Header Responce */
+    
+     /* End Header Responce */
+   /* Home Page Responce */
+     
+     /* End Home Page Responce */
     }  
+    @media only screen and (min-width: 992px) {
+     /* Meeting Css Responsive */
+     /* Meeting Css Responsive */
+
+     /* User Details Responsive */
+     .user-card{
+         margin-left: 430px;
+        /* margin: 10px; */
+    }
+    /* User Details Responsive */
+    }
+    @media only screen and (min-width: 1200px) {
+        /* Meeting Css Responsive */
+          
+         /* Meeting Css Responsive */
+    }

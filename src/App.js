@@ -1,6 +1,5 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+
 
 import {
   Route,
@@ -17,6 +16,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Availability from './components/Availability';
+import TimeSlot from './components/TimeSlot';
 
 function App() {
   return (
@@ -29,12 +29,13 @@ function App() {
       {/* <PickTime/> */}
       
       <Route path="/Login" component={Login}/>
-      {/* <Route path="/Availability" component={Availability}/> */}
+      <Route path="/Availability" component={Availability}/>
       <Route path="/Meeting" component={Meeting}/>
       <Route path="/UserDetails" component={UserDetails}/>
       <Route path="/PickTime" component={PickTime}/>
       <Route path="/Header" component={Header}/>
       <Route path="/Home" component={Home}/>
+      <Route path="/TimeSlot" component={TimeSlot}/>
     </div>
     </BrowserRouter>
   );
