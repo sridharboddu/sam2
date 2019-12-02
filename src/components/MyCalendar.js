@@ -33,10 +33,37 @@ const localizer = momentLocalizer(moment);
 
 const MyCalendar =( props) => {
   // let [date,setdate]=useState("");
-
-    let testHandler=()=>{
+  
+    let testHandler=(date)=>{
+   
+// var test=date.substring(1,3);
+  // alert(test)
+      let today=new Date()
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+      var hours=today.getHours(); // => 9var min=today.getMinutes();
+      today= yyyy + '-' + mm + '-' + dd;
+     
+      var dd1 = String(date.getDate()).padStart(2, '0');
+      var mm1 = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy1 = date.getFullYear();
+      var hours=date.getHours(); // => 9var min=today.getMinutes();
+     var today1= yyyy1 + '-' + mm1 + '-' + dd1;
+      
+      //alert(today1+today)
+      if(today1>=today){
+        props.history.push("/PickTime");
+      }
+      else{
+        alert("plz add valid date")
+        window.location.reload();
+        props.history.push("/Meeting");
+        
+       
+      }
       // alert(date);
-      props.history.push("/PickTime");
+    
     }
     
     
@@ -70,20 +97,25 @@ const MyCalendar =( props) => {
       endAccessor="end"
       // views={['month', 'agenda']}
       // onNavigate={(events)=>testHandler(events.end)}
-      //   onNavigate={(date, view) =>{
-      //     console.log(date) 
-      //     testHandler(date)
+        onNavigate={(date, view) =>{
+          console.log(date) 
+          testHandler(date)
        
-      //   }
-
+        }}
       // }
+      // onSelectEvent={event => alert(event.title)}
+      // onSelectSlot={(slotInfo) => alert(
+      //   `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +
+      //   `\nend: ${slotInfo.end.toLocaleString()}` +
+      //   `\naction: ${slotInfo.action}`
+      //   )}
       components={{
         dateCellWrapper: DateCell,
         
        }}
-          onNavigate={date => {
-            testHandler({ selectedDate: date });
-      }}
+      //     onNavigate={date => {
+      //       testHandler({ selectedDate: date });
+      // }}
       // onSelecting={testHandler}
       // onSelectSlot={testHandler}
       // onDoubleClickEvent={testHandler}

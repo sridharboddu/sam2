@@ -8,7 +8,7 @@ export default function Header() {
      {/* <a href="#" class="brand-logo center">Logo</a> */}
      <ul id="nav-mobile" className="left hide-on-med-and-down">
        <li> <i className="material-icons menu" >menu</i></li>
-       {/* <li>
+       <li>
            <form>
        <div className="input-field inp" >
          
@@ -17,7 +17,7 @@ export default function Header() {
          <a className="waves-effect waves-light btn white black-text">Search</a>
        </div>
      </form>
-    </li> */}
+    </li>
      </ul>
      <ul id="nav-mobile" className="right hide-on-med-and-down">
     <li><b class="namcnr" >Sainik Akkasali</b></li>

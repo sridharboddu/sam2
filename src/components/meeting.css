@@ -385,8 +385,10 @@ padding-top:0px !important;
       /* .rbc-month-row  .rbc-row-bg  .date-in-past.rbc-date-cell {
           pointer-events: none !important;
       } */
+      
        .date-in-past {
-        pointer-events: none !important;
+        /* pointer-events: none !important; */
+        outline: none;
         /* opacity: 0.4 !important; */
         width: 14.3%;
         background: #ccc;
@@ -397,12 +399,15 @@ padding-top:0px !important;
     .rbc-header + .rbc-header {
         border-left:inherit;
     }
-/* .rbc-date-cell a{
+    /* .rbc-month-row ,.rbc-row-bg ,.date-in-past ,.rbc-day-bg{
+        pointer-events: none !important; 
+    } */
+    /* .rbc-date-cell a{
     cursor:not-allowed;
 } */
-.unread{
+/* .unread{
     pointer-events: none !important;
-}
+} */
     
     .rbc-header {
         border-bottom: inherit !important;
@@ -711,7 +716,7 @@ a.confirm-btn-hide:hover {
    margin: 50px 137px 50px 73px; 
    /* padding-left: 60px; */
    padding: 30px 60px 30px 60px;
-   height:610px !important;
+   /* height:610px !important; */
    border-radius: 5px;
 }
 .pick-link{
@@ -747,9 +752,50 @@ a.confirm-btn-hide:hover {
     font-weight: 500;
     
 }
-a.td-mtg:active {
+.tabs .indicator {
+
+    margin: 0px 15px;
+    position: absolute;
+    bottom: 4px;
+    height: 2px;
+    background-color: #827CBF !important;
+    will-change: left, right;
+}
+.tabs .tab {
+  
+    display: inline-block;
+    text-align: left;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    text-transform:none;
+}
+.tab-width{
+ width: 140px !important;
+}
+.tab-width2{
+    width: 160px !important;
+   }
+.tabs .tab a {
+    /* color: rgba(238,110,115,0.7); */
+    color: #616161;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+}
+.tabs .tab a:hover , .tabs .tab a.active {
+    background-color: transparent;
+    color: #616161;
+}
+.tabs .tab a:hover , .tabs .tab  {
+    background-color: transparent;
+    color: #616161;
+}
+/* a.td-mtg:active {
     text-decoration: underline;
-  }
+  } */
   
 /* .td-mtg:hover{
     border-bottom: 2px solid #827CBF;  

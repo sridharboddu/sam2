@@ -21,7 +21,7 @@ export default function TodayMeeting() {
     <div>
        <div class="row">
                 <div class=" ntf-card">
-                <div class=" col s12 m6 l6 xl6">
+                <div class=" col s12 m12 l6 xl6">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 s2 m2 l2 xl2 img-content">
@@ -73,7 +73,7 @@ export default function TodayMeeting() {
                      </div>
                    </div>
                  </div>
-                 <div class=" col s12 m6 l6 xl6">
+                 <div class=" col s12 m12 l6 xl6">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 s2 m2 l2 xl2 img-content">
@@ -89,7 +89,7 @@ export default function TodayMeeting() {
                         <p class="home-time-slot"> 11:00 AM-11:30 AM</p></div>
                         </div>
                       </div>
-                      <div class="col s4 s4 m4 l4 xl4 card-btn-ntf ">
+                      <div class="col s4 m4 l4 xl4 card-btn-ntf ">
                       <a class=" btn-small btn-ntf green accent-3">Accept</a>
 
                       <a class=" btn-small btn-ntf red">Decline</a>
@@ -97,7 +97,7 @@ export default function TodayMeeting() {
                      </div>
                    </div>
                  </div>
-                 <div class=" col s12 m6 l6 xl6">
+                 <div class=" col s12 m12 l6 xl6">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 m2 l2 xl2 img-content">
@@ -113,7 +113,7 @@ export default function TodayMeeting() {
                         <p class="home-time-slot"> 11:00 AM-11:30 AM</p></div>
                         </div>
                       </div>
-                      <div class="col s4 s4 m4 l4 xl4 card-btn-ntf ">
+                      <div class="col s4 m4 l4 xl4 card-btn-ntf ">
                       <a class=" btn-small btn-ntf green accent-3">Accept</a>
 
                       <a class=" btn-small btn-ntf red">Decline</a>
@@ -121,7 +121,7 @@ export default function TodayMeeting() {
                      </div>
                    </div>
                  </div>
-                 <div class=" col s12 m6 l6 xl6 ">
+                 <div class=" col s12 m12 l6 xl6 ">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 m2 l2 xl2 img-content">
@@ -137,7 +137,7 @@ export default function TodayMeeting() {
                         <p class="home-time-slot"> 11:00 AM-11:30 AM</p></div>
                         </div>
                       </div>
-                      <div class="col s4 s4 m4 l4 xl4 card-btn-ntf ">
+                      <div class="col s4 m4 l4 xl4 card-btn-ntf ">
                       <a class=" btn-small btn-ntf green accent-3">Accept</a>
 
                       <a class=" btn-small btn-ntf red">Decline</a>
@@ -145,7 +145,7 @@ export default function TodayMeeting() {
                      </div>
                    </div>
                  </div>
-                 <div class=" col s12 m6 l6 xl6">
+                 <div class=" col s12 m12 l6 xl6">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 m2 l2 xl2 img-content">
@@ -161,7 +161,7 @@ export default function TodayMeeting() {
                         <p class="home-time-slot"> 11:00 AM-11:30 AM</p></div>
                         </div>
                       </div>
-                      <div class="col s4 s4 m4 l4 xl4 card-btn-ntf ">
+                      <div class="col s4 m4 l4 xl4 card-btn-ntf ">
                       <a class=" btn-small primary btn-ntf green accent-3">Accept</a>
 
                       <a class=" btn-small danger btn-ntf red">Decline</a>
@@ -169,7 +169,7 @@ export default function TodayMeeting() {
                      </div>
                    </div>
                  </div>
-                 <div class=" col s12 m6 l6 xl6">
+                 <div class=" col s12 m12 l6 xl6">
                    <div class="card usr-ntf">
                      <div class="row crd-cntt">
                       <div class="col s2 m2 l2 xl2 img-content">
@@ -186,7 +186,7 @@ export default function TodayMeeting() {
                         <p class="home-time-slot"> 11:00 AM-11:30 AM</p></div>
                         </div>
                       </div>
-                      <div class="col s4 s4 m4 l4 xl4 card-btn-ntf ">
+                      <div class="col s4 m4 l4 xl4 card-btn-ntf ">
                       <a class=" btn-small primary btn-ntf green accent-3">Accept</a>
 
                       <a class=" btn-small danger btn-ntf red">Decline</a>
