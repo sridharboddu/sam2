@@ -25,9 +25,8 @@ export default function Login() {
            <div class="col s4  googlee">
             <p class="signwith">Sign in with Google to Continue</p>
             <div>
-            <GoogleLogin 
-
-                        clientId={"26204211549-4h02adpj75qnutnqbqp5qp9i75mc54op.apps.googleusercontent.com"}
+            <GoogleLogin
+                        clientId={"69784952631-ntl47uqp2t0ti6r7k3tk04fjagiif4f4.apps.googleusercontent.com"}
                       //   render={renderProps => (
                          
                       //  <button class= "btn butngoogle">
