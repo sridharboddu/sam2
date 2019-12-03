@@ -9,14 +9,23 @@ import { GoogleLogin } from 'react-google-login';
 // import config from './config.json';
 
 import './meeting.css';
-export default function Login() {
+export default function Login(props) {
 
   const googleResponse = (response) => {
-    console.log(response);
+    // console.log(response.Zi.access_token);
+    if(response.Zi.access_token)
+    {     
+       localStorage.setItem("access_token",response.Zi.access_token)  
+      props.history.push("/Availability"); 
+     }  
+    else
+    {    
+     alert("error");  
+    }
   }
-  const onFailure = (response) => {
-    console.log(response);
-  }
+  // const onFailure = (response) => {
+  //   console.log(response);
+  // }
   return (
     <div >
       <div class="backimg">
@@ -35,7 +44,7 @@ export default function Login() {
                       //   )}
                         buttonText="Sign in with Google"
                         onSuccess={googleResponse}
-                        onFailure={onFailure}
+                        // onFailure={onFailure}
                         // cookiePolicy={'single_host_origin'}
                     />
              </div>

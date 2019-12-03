@@ -77,11 +77,14 @@ import './meeting.css';
         </div>
         {
           addguestshow?(
-            <div class="input-field mb0">
-             <label class="frm-label">Add Guest Email</label>       
-          <input placeholder=" " type="email" class="validate user-input"
+            <div class="input-field mb0 ">
+             <label class="frm-label">Add Guest Email</label> 
+          {/* <div class="">       */}
+          <input placeholder=" " type="email"
+           class="validate user-input chips "
           onChange={(e)=>setGuestEmail(e.target.value)}
           />
+          {/* </div> */}
           <p>Notify up to 10 additional guests of the scheduled event</p>
         </div>
           ):<a class=" btn add-btn" onClick={addguestHandler} >Add Guests</a>

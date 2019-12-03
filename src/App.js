@@ -28,7 +28,7 @@ function App() {
       {/* <UserDetails /> */}
       {/* <PickTime/> */}
       
-      <Route path="/Login" component={Login}/>
+      <Route exact path="/" component={Login}/>
       <Route path="/Availability" component={Availability}/>
       <Route path="/Meeting" component={Meeting}/>
       <Route path="/UserDetails" component={UserDetails}/>

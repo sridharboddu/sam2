@@ -12,7 +12,7 @@ export default function Meeting() {
     <div>
      <div class="card meet-card">
       <div class="">
-      <Link to="Availability" class="material-icons meet-icon"></Link>
+      <Link to="" class="material-icons meet-icon"></Link>
          {/* <div class="meet-icon"></div>   */}
       </div>
       <div class="event-title">John Doe</div>

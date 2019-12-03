@@ -63,18 +63,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
+    <!-- <script>
       $(document).ready(function(){
         // $('.tabs').tabs();
         // $('ul.tabs').tabs();
+        $('.chips-placeholder').chips({
+         placeholder: 'Enter a tag',
+        secondaryPlaceholder: '+Tag',
+  });
       });
 
     
-   </script>
-     <!-- <script type="text/javascript">
+   </script> -->
+     <script type="text/javascript">
         $(document).ready(function(){
             $('ul.tabs').tabs();
           });
-        </script> -->
+          $('.chips').chips();
+  $('.chips-initial').chips({
+    
+  });
+        </script>
   </body>
 </html>
