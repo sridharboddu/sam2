@@ -1,6 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import M from "materialize-css";
 import '../components/meeting.css';
-export default function Header() {
+function Header() {
+
+  useEffect(()=>{
+    
+      let dropdown = document.querySelectorAll('.dropdown-trigger');
+       M.Dropdown.init(dropdown);
+    
+  });
   return (
     <div>
       <nav>
@@ -21,9 +29,18 @@ export default function Header() {
      </ul>
      <ul id="nav-mobile" className="right hide-on-med-and-down">
     <li><b class="namcnr" >Sainik Akkasali</b></li>
-    <li className=" collection-item dispic"> 
+    <li className=" collection-item dispic dropdown-trigger" href='#' data-target='dropdown1'> 
     <img src="./images/avatar4.png" width="45px" height="45px" className="topimg circle"/>
-    </li>
+    
+    <ul id='dropdown1' class='dropdown-content '>
+    <li><a href="#!">My profile</a></li>
+    <li><a href="#!">Log out</a></li>
+    {/* <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li> */}
+  </ul>
+  </li>
      </ul>
    </div>
   </nav>
@@ -37,3 +54,4 @@ export default function Header() {
     </div>
   )
 }
+export default Header;

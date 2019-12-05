@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
   
   Link,
@@ -10,7 +10,7 @@ import { GoogleLogin } from 'react-google-login';
 
 import './meeting.css';
 export default function Login(props) {
-
+  
   const googleResponse = (response) => {
     // console.log(response.Zi.access_token);
     if(response.Zi.access_token)
@@ -26,7 +26,20 @@ export default function Login(props) {
   // const onFailure = (response) => {
   //   console.log(response);
   // }
+ 
+  // useEffect(() => {
+  //   window.gapi.signin2.render('g-signin2', {
+  //     'scope': 'https://www.googleapis.com/auth/plus.login',
+  //     'width': 200,
+  //     'height': 50,
+  //     'longtitle': true,
+  //     'theme': 'dark',
+  //     'onsuccess': onSignIn
+  //   })
+  // })
+ 
   return (
+    
     <div >
       <div class="backimg">
         <div class="row">
@@ -34,11 +47,11 @@ export default function Login(props) {
            <div class="col s4  googlee">
             <p class="signwith">Sign in with Google to Continue</p>
             <div>
-            <GoogleLogin
-                        clientId={"69784952631-ntl47uqp2t0ti6r7k3tk04fjagiif4f4.apps.googleusercontent.com"}
+            <GoogleLogin class= "btn butngoogle"
+                        clientId="69784952631-ntl47uqp2t0ti6r7k3tk04fjagiif4f4.apps.googleusercontent.com"
                       //   render={renderProps => (
                          
-                      //  <button class= "btn butngoogle">
+                      //  <button >
                       //    <img  src="./images/googlelogo.png "  class="left googicon"/>Sign in with Google </button>
                      
                       //   )}

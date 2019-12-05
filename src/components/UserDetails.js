@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
+import M from "materialize-css";
 import { 
   Link,
   
@@ -14,6 +15,14 @@ import './meeting.css';
   let [guestemail,setGuestEmail]=useState("");
   let [description,setDescription]=useState("");
   // let [addguest,setAddGuest]=useState("");
+
+  useEffect(()=>{
+    // let tabs = document.querySelectorAll(".chips");
+    
+      let chips = document.querySelectorAll('.chips');
+      M.Chips.init(chips);
+   
+  })
   let addguestHandler=()=>{
     setAddguestshow(true); 
   }
@@ -79,12 +88,14 @@ import './meeting.css';
           addguestshow?(
             <div class="input-field mb0 ">
              <label class="frm-label">Add Guest Email</label> 
-          {/* <div class="">       */}
-          <input placeholder=" " type="email"
+          {/* <input placeholder=" " type="email"
            class="validate user-input chips "
           onChange={(e)=>setGuestEmail(e.target.value)}
-          />
-          {/* </div> */}
+          /> */}
+          <div class="chips chips-placeholder input-field user-input">
+         <input type="email" id="efullname" name="efullname" data-error=".errorTxt16" class="input " autocomplete="off"/>
+         <div class="errorTxt16"></div> 
+         </div> 
           <p>Notify up to 10 additional guests of the scheduled event</p>
         </div>
           ):<a class=" btn add-btn" onClick={addguestHandler} >Add Guests</a>
@@ -99,11 +110,21 @@ import './meeting.css';
           {/* <textarea></textarea> */}
           
           </div>
+
+          {/* <div class="chips chips-placeholder input-field user-input">
+         <input id="efullname" name="efullname" data-error=".errorTxt16" class="input " autocomplete="off"/>
+         <div class="errorTxt16"></div> 
+         </div>   */}
+        
+         
        <div class="add-schedule-btn">
         <button  class=" btn add-btn-meeting ">Schedule Meeting</button>
         </div>
         </div>
         
+        
+
+
       </form>
         </div>
         </div>

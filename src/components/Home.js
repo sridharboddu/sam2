@@ -1,5 +1,8 @@
-import React,{ useState } from 'react'
+import React,{useEffect, useState } from 'react'
 import '../components/meeting.css';
+
+import M from "materialize-css";
+// import { M } from 'materialize-css/dist/js/materialize.min.js';
 import {Link} from 'react-router-dom';
 
 import Header from './Header';
@@ -7,12 +10,20 @@ import TodayMeeting from './TodayMeeting';
 import ScheduleMeeting from './ScheduleMeeting';
 export default function Home() {
   let[show,setShow]=useState(true);
+  useEffect(()=>{
+    let tabs = document.querySelectorAll(".tabs");
+    M.Tabs.init(tabs);
+    // var tab = document.querySelector('.Tab')
+    // var instance= M.Tabs.init(tab,{});
+    // var instance = M.Tabs.getInstance(elem);
+  })
     const todayHandler=()=>{
       setShow(true);
     }
     const scheduleHandler=()=>{
       setShow(false);
     }
+    
   return (
     <div>
         <Header/>

@@ -56,7 +56,7 @@ const MyCalendar =( props) => {
         props.history.push("/PickTime");
       }
       else{
-        alert("plz add valid date")
+        alert("Please Add Valid Date")
         window.location.reload();
         props.history.push("/Meeting");
         
@@ -68,7 +68,7 @@ const MyCalendar =( props) => {
     
     
     
-   const DateCell = ({
+ const DateCell = ({
  value,
  children,
 }) => {
@@ -91,10 +91,15 @@ const MyCalendar =( props) => {
      <div>
  <div style={{height: 300,marginLeft:"64px",marginRight:"64px",}} >
     <Calendar
+      
       localizer={localizer}
       events={[]}
       startAccessor="start"
       endAccessor="end"
+      drilldownView="date"
+     
+      
+      
       // views={['month', 'agenda']}
       // onNavigate={(events)=>testHandler(events.end)}
         onNavigate={(date, view) =>{

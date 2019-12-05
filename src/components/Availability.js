@@ -1,7 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './meeting.css';
-import{Link} from 'react-router-dom';
+import{ Link } from 'react-router-dom';
 export default function Availability(){
+ 
+  let [from,setFrom]=useState();
+  let [to,setTo]=useState();
+  let [sunday,setSunday]=useState("");
+  let [monday,setMonday]=useState("");
+  let [tuesday,setTuesday]=useState("");
+  let [wednesday,setWednesday]=useState("");
+  let [thursday,setThursday]=useState("");
+  let [friday,setFriday]=useState("");
+  let [saturday,setSaturday]=useState("");
+  
+  let handleClick=(e)=>{
+      console.log(from,to,sunday,monday,tuesday,wednesday,thursday,friday,saturday);
+      
+    }
   return (
            <div>
              <div class="row wholee">
@@ -14,8 +29,10 @@ export default function Availability(){
                     <div class="col s6 from-to">
                      <div class="col s3 frda"><p class="frm">From</p></div>
                        <div class="col s6 slttime">
-                        <select class="browser-default  selbox">
-                          <option value="0" disabled selected>09:00 AM</option> 
+                        <select class="browser-default  selbox"
+                          onChange={(e)=>setFrom(e.target.value)}
+                        >
+                          {/* <option value="0"  >09:00 AM</option>  */}
                           <option value="1">09:00 AM</option>
                           <option value="2">09:30 AM</option>
                           <option value="3">10:00 AM</option>
@@ -70,8 +87,10 @@ export default function Availability(){
       <div class="col s6 to-from">
             <div class="col s3 tda"><p class="toadj">To</p></div>
                   <div class="col s6 slottime"> 
-                       <select class="browser-default  selbox">
-                            <option value="1" disabled selected>05:00 PM</option> 
+                       <select class="browser-default  selbox"
+                        onChange={(e)=>setTo(e.target.value)}
+                       >
+                            <option value="1" >05:00 PM</option> 
                             <option value="2">05:30 PM</option>
                             <option value="3">06:00 PM</option>
                             <option value="4">06:30 PM</option>
@@ -86,7 +105,7 @@ export default function Availability(){
                             <option value="13">11:00 PM</option>
                             <option value="14">11:30 PM</option>
                             <option value="15">12:00 AM</option>
-                            <option value="16" >12:30 AM</option>
+                            <option value="16">12:30 AM</option>
                             <option value="17">01:00 AM</option>
                             <option value="18">01:30 AM</option>
                             <option value="19">02:00 AM</option>
@@ -99,7 +118,7 @@ export default function Availability(){
                             <option value="26">05:30 AM</option>
                             <option value="27">06:00 AM</option>
                             <option value="28">06:30 AM</option>
-                            <option value="29" >07:00 AM</option>
+                            <option value="29">07:00 AM</option>
                             <option value="30">07:30 AM</option>
                             <option value="31">08:00 AM</option>
                             <option value="32">08:30 AM</option>
@@ -127,21 +146,33 @@ export default function Availability(){
           <div class="row weeks">
              {/* <div class="col s1 "></div> */}
                  <div class="col s1 boxbdr">
-                     <label class="cont"><input type="checkbox"  id="checkbox"  /><br/>
+                     <label class="cont">
+                       <input type="checkbox"  id="checkbox" 
+                         onChange={(e)=>setSunday(e.target.value)}
+                         value="sunday"
+                       /><br/>
                          <p class="sun-label ">Sun</p>
                           <span class="checkmark">
                           </span>
                     </label>
                  </div>
            <div class="col s1 boxbdr  ">
-                   <label class="cont"><input type="checkbox"  id="checkbox" /><br/>
+                   <label class="cont">
+                     <input type="checkbox"  id="checkbox"
+                      onChange={(e)=>setMonday(e.target.value)}
+                      value="monday"
+                     /><br/>
                         <p class=" sun-label" >Mon</p>
                          <span class="checkmark"> 
                           </span>
                    </label>
           </div>
              <div class="col s1 boxbdr ">
-                    <label class="cont"><input type="checkbox"  id="checkbox" /><br/>
+                    <label class="cont">
+                      <input type="checkbox"  id="checkbox"
+                      onChange={(e)=>setTuesday(e.target.value)}
+                      value="tuesday"
+                      /><br/>
                         <p class=" sun-label" >Tue</p>
                           <span class="checkmark">
 
@@ -149,7 +180,11 @@ export default function Availability(){
                      </label>
              </div>
                  <div class="col s1 boxbdr ">
-                     <label class="cont"><input type="checkbox"  id="checkbox" /><br/>
+                     <label class="cont">
+                       <input type="checkbox"  id="checkbox" 
+                        onChange={(e)=>setWednesday(e.target.value)}
+                        value="wednesday"
+                       /><br/>
                           <p class=" sun-label" >Wed</p>
                             <span class="checkmark">
 
@@ -157,14 +192,22 @@ export default function Availability(){
                      </label>
                  </div>
                    <div class="col s1 boxbdr ">  
-                       <label class="cont"><input type="checkbox"  id="checkbox" /><br/>
+                       <label class="cont">
+                         <input type="checkbox"  id="checkbox"
+                          onChange={(e)=>setThursday(e.target.value)}
+                          value="thursday"
+                         /><br/>
                           <p class=" sun-label" >Thu</p>
                             <span class="checkmark">
                             </span>
                         </label>
                    </div>
                      <div class="col s1 boxbdr "> 
-                        <label class="cont"><input type="checkbox"  id="checkbox" /><br/>
+                        <label class="cont">
+                          <input type="checkbox"  id="checkbox"
+                          onChange={(e)=>setFriday(e.target.value)}
+                          value="friday"
+                          /><br/>
                           <p class=" sun-label" >Fri</p>
                               <span class="checkmark">
 
@@ -172,7 +215,11 @@ export default function Availability(){
                           </label>
                      </div>
                    <div class="col s1 boxbdr " > 
-                        <label class="cont"><input type="checkbox"  id="checkbox"/><br/>
+                        <label class="cont">
+                          <input type="checkbox"  id="checkbox"
+                           onChange={(e)=>setSaturday(e.target.value)}
+                           value="saturday"
+                          /><br/>
                             <p class=" sun-label ">Sat</p>
                                <span class="checkmark">
 
@@ -181,7 +228,11 @@ export default function Availability(){
                       </div>
           </div>
         <div class="nextb">
-            <Link to="/Home"> <button class="nxt-btn">Next</button></Link>
+            <Link to="/Home">
+               <button class="nxt-btn"
+             onClick={handleClick}
+            >Next</button>
+            </Link>
 
         </div>
       </div>

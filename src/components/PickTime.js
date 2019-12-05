@@ -11,8 +11,8 @@ import MyCalendar from './MyCalendar';
 export default function PickTime() {
    let [show, setShow] = useState(true);
    const showHandler=()=>{
-     
-    setShow(false);
+    setTimeout(() => setShow(false), 0);
+    // setShow(false);
     
    }
    let submitButton=(e)=>{
